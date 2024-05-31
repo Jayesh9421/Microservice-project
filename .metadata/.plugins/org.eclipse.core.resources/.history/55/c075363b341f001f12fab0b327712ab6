@@ -1,0 +1,22 @@
+package com.emp.service.IMPL;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.emp.entity.Employee;
+import com.emp.repo.EmployeeRepo;
+import com.emp.response.EmployeeResponse;
+import com.emp.service.EmployeeService;
+
+public class EmployeeServiceIMPL implements EmployeeService{
+	
+	@Autowired
+	private EmployeeRepo employeeRepo;
+	
+	@Override
+	public EmployeeResponse getEmployeeById(int id) {
+		Employee employee = employeeRepo.findById(id).orElseThrow(()-> new RuntimeException( id +"This id is not found"));
+		
+		return employee;
+	}
+
+}

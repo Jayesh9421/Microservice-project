@@ -1,0 +1,23 @@
+package com.emp.service.IMPL;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.emp.entity.Employee;
+import com.emp.repo.EmployeeRepo;
+import com.emp.service.EmployeeService;
+
+@Service
+public class EmployeeServiceIMPL implements EmployeeService{
+	@Autowired
+	private EmployeeRepo employeeRepo;
+	
+	@Override
+	public Employee getEmpoyeeById() {
+		
+		employeeRepo.findById(id)
+		
+		return null;
+	}
+
+}

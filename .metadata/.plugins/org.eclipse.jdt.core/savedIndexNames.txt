@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+G:\09.Microservice\01.Microservice 2024\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1785677724.index
+2009273.index

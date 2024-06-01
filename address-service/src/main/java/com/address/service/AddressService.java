@@ -6,6 +6,6 @@ import com.address.response.AddressResponse;
 
 public interface AddressService {
 
-	AddressResponse addressResponse(int employeeId);
+//	AddressResponse addressResponse(int employeeId);
 
 }

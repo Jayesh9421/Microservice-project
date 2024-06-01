@@ -1,0 +1,22 @@
+package com.address.service;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.address.repo.AddressRepo;
+import com.address.response.AddressResponse;
+
+public class AddressServiceIMPL {
+	
+	@Autowired
+	private AddressRepo addressRepo;
+	
+	@Autowired
+	private ModelMapper modelMapper;
+	
+	public AddressResponse addressResponse(int employeeId) {
+		
+		
+	}
+	
+}
